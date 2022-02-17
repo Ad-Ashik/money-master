@@ -59,4 +59,9 @@ document.getElementById('saving-button').addEventListener('click', function () {
     }
 
     // 
+    if (totalSalary < savingAmount) {
+        alert('your saving is not  enough');
+        document.getElementById('saving-amount').innerText = "0000";
+        document.getElementById('total-balance').innerText = "0000";
+    }
 })
