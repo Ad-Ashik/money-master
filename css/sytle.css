@@ -1,0 +1,38 @@
+.budget{
+    color: #31A5AC;
+}
+/* input fild */
+.input-fild input,.input-fild button{
+   width: 50% !important;
+   display: inline-block !important;
+}
+.input-fild{
+    position: relative;
+    left: 113px;
+}
+.food,.rent,.Clothes{
+    position: relative;
+    left: 18px;
+    margin: 7px;
+}
+.rent{
+    left: 23px;
+}
+.Clothes{
+    left: 2px;
+}
+.calculate{
+    width: 36% !important;
+    position: relative;
+    left: 45px;
+}
+/* saving */
+.saving input{
+    width: 20% !important;
+    display: inline-block !important;
+}
+.btn-save{
+    width: 25%;
+    position: relative;
+    top: -8px;
+}
