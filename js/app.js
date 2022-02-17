@@ -20,3 +20,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     document.getElementById('total-salary').innerText = subTotal;
 });
 
+// saving button event
+document.getElementById('saving-button').addEventListener('click', function () {
+    console.log('saving');
+})
