@@ -4,9 +4,7 @@ function getInputValue(price) {
     const inputValue = parseInt(inputFild.value);
     // inputFild.value = '';
     return inputValue;
-
 }
-
 
 // calculate button evevt
 document.getElementById('calculate').addEventListener('click', function () {
@@ -40,6 +38,7 @@ document.getElementById('saving-button').addEventListener('click', function () {
     const salaryInput = getInputValue('salary');
     const saveInput = getInputValue('save');
     const saving = (salaryInput * saveInput) / 100;
+    // condition check
     if (salaryInput > 0) {
         document.getElementById('saving-amount').innerText = saving;
     }
@@ -58,7 +57,7 @@ document.getElementById('saving-button').addEventListener('click', function () {
         alert('please valid number');
     }
 
-    // 
+    // condition check
     if (totalSalary < savingAmount) {
         alert('your saving is not  enough');
         document.getElementById('saving-amount').innerText = "0000";
