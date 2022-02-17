@@ -23,11 +23,15 @@ document.getElementById('calculate').addEventListener('click', function () {
         document.getElementById('total-expens').innerText = totalExpens;
         document.getElementById('total-salary').innerText = subTotal;
     }
-    else if (salaryInput < totalExpens) {
-        alert('your income is not  enough')
-    }
     else {
         alert('please valid number');
+    }
+
+    // not  enough
+    if (salaryInput < totalExpens) {
+        alert('your income is not  enough');
+        document.getElementById('total-expens').innerText = "0000";
+        document.getElementById('total-salary').innerText = "0000";
     }
 });
 
@@ -53,4 +57,6 @@ document.getElementById('saving-button').addEventListener('click', function () {
     else {
         alert('please valid number');
     }
+
+    // 
 })
